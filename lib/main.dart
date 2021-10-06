@@ -55,8 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     super.initState();
     var map = flatten(jsonDecode("{\"type\":\"deposit\",\"masked_account_number\":\"XXXXXXX123\",\"link_ref_number\":\"123456789\",\"profile\":{\"holders\":{\"holder\":[{\"address\":\"4\/1290, 785th Cross, 13rd Main, 7th Block, Bangalore - 569911\",\"ckycCompliance\":\"true\",\"dob\":\"24-07-1970\",\"email\":\"ram.sapan@gmail.com\",\"landline\":\"\",\"mobile\":\"91729391923\",\"name\":\"Ramkrishna Sapan\",\"nominee\":\"REGISTERED\",\"pan\":\"AAAPL1234C\"}],\"type\":\"Single\"}},\"summary\":{\"balanceDateTime\":\"2021-06-22T13:20:00+05:30\",\"branch\":\"Jayanagar 7th Block\",\"currency\":\"INR\",\"currentBalance\":\"101666.33\",\"currentODLimit\":\"0\",\"drawingLimit\":\"0\",\"exchgeRate\":\"\",\"facility\":\"OD\",\"ifscCode\":\"APNB0001154\",\"micrCode\":\"500245646\",\"openingDate\":\"06-08-1999\",\"pending\":{\"amount\":\"0\",\"transactionType\":\"DEBIT\"},\"status\":\"ACTIVE\",\"type\":\"SAVINGS\"},\"transactions\":{\"endDate\":\"\",\"startDate\":\"\",\"transaction\":[{\"amount\":\"1239\",\"currentBalance\":\"62289.25\",\"mode\":\"UPI\",\"narration\":\"UPI\/935314560764\/getsimpl\/simpl@axisbank\/Axis Bank\",\"reference\":\"RFN00013383\",\"transactionTimestamp\":\"2021-04-01T13:20:14+05:30\",\"txnId\":\"M3258741\",\"type\":\"DEBIT\",\"valueDate\":\"2021-04-01\"}]}}"));
-    print(map);
-    // map.entries.forEach((element) { print(element.key);});
+    map.entries.forEach((element) { print(element.key);});
   }
 
   void _incrementCounter() {
